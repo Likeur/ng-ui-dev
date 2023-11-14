@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-docs',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SideBarComponent, RouterOutlet, RouterModule],
   templateUrl: './docs.component.html',
-  styles: ``
 })
-export class DocsComponent {
+export default class DocsComponent {
 
 }

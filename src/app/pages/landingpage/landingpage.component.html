@@ -1,1 +1,16 @@
-<p>landingpage works!</p>
+<main>
+    <app-navbar />
+    <section class="p-4">
+        <div class="flex flex-col text-3xl lg:text-5xl font-bold text-gray-800 lg:items-center justify-end mt-10 lg:mt-0 lg:h-[40vh]">
+            <h1><span class="hidden lg:inline-block">A Set of </span> <span class="text-transparent lg:ml-2 bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text">UIs Building Blocks</span></h1>
+            <h1>For <span class="text-transparent bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text">Angular</span> Styled With Tailwindcss</h1>
+        </div>
+        <div class="mt-3 lg:text-center text-gray-700">
+            <p>For fast development and better UIs, get easy to customize ngUI code snippets for your components</p>
+        </div>
+        <div class="mt-5 flex lg:justify-center">
+            <a routerLink="/blocks" class="bg-gradient-to-r from-pink-600 to-blue-600 p-2 text-white rounded-full px-3 font-semibold inline-block">All blocks</a>
+            <a routerLink="/templates" class="bg-gradient-to-r ml-5 from-pink-600 to-blue-600 p-2 text-transparent bg-clip-text underline rounded-full px-3 font-semibold inline-block">Templates</a>
+        </div>
+    </section>
+</main>

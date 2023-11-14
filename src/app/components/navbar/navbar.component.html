@@ -1,0 +1,14 @@
+<main class="flex justify-center relative lg:top-5">
+    <nav class="w-screen border-b lg:w-min bg-white/40 lg:bg-white flex items-center overflow-hidden lg:border-none lg:shadow-sm p-4 lg:p-2 px-5 lg:rounded-full">
+        <div>
+            <a routerLink="/home">
+                <img src="../../../assets/images/ng ui new logo.png" width="50" alt="">
+            </a>
+        </div>
+        <ul class="flex items-center ml-10">
+            @for (item of navLinks; track item.id) {
+                <li class="ml-3 text-gray-900 font-semibold"><a routerLink="{{item.route}}" routerLinkActive="text-pink-600"> {{item.title}} </a></li>
+            }
+        </ul>
+    </nav>
+</main>

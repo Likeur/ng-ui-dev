@@ -1,1 +1,14 @@
-<p>docs works!</p>
+<main class="overflow-hidden h-screen w-screen">
+    <div class="p-4 lg:sticky lg:top-0 bg-white border-b flex justify-between">
+        <a routerLink="">
+            <img src="../../../../assets/images/ng ui new logo.png" width="60" alt="">
+        </a>
+        <button>DM</button>
+    </div>
+    <main class="flex">
+        <app-side-bar />
+        <section class="">
+            <router-outlet></router-outlet>
+        </section>
+    </main>
+</main>

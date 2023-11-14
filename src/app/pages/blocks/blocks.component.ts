@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 
 @Component({
-  selector: 'app-templates',
+  selector: 'app-blocks',
   standalone: true,
   imports: [CommonModule, NavbarComponent],
-  templateUrl: './templates.component.html',
-
+  templateUrl: './blocks.component.html',
+  styles: ``
 })
-export default class TemplatesComponent {
+export default class BlocksComponent {
 
 }
