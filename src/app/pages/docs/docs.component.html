@@ -3,7 +3,7 @@
         <a routerLink="">
             <img src="../../../../assets/images/ng ui new logo.png" width="60" alt="">
         </a>
-        <button>DM</button>
+        <button (click)="isDarkmode()" id="darkmode" class="text-xl bg-gray-100 border h-8 w-8 rounded-full p-2 flex justify-center items-center duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
     </div>
     <main class="flex">
         <app-side-bar />
