@@ -1,9 +1,9 @@
-<nav class="bg-white border-r lg:sticky z-40 lg:w-56 p-2 h-screen">
+<nav class="bg-white dark:bg-black duration-300 dark:text-white border-r lg:sticky z-40 lg:w-56 p-2 h-screen">
     <ul class="p-4">
         @for (item of sideUpLinks; track item.id) {
             <li>
                 <a routerLink="{{item.link}}" class="flex font-semibold items-center mt-2">
-                    <span class="border p-1 bg-gray-100 flex justify-center items-center"><i class='{{item.icon}}'></i></span>
+                    <span class="border p-1 bg-gray-100 flex justify-center items-center dark:bg-gray-900"><i class='{{item.icon}}'></i></span>
                     <span class="ml-1">{{item.title}}</span>
                 </a>
             </li>
@@ -14,13 +14,13 @@
         <p  class="text-lg mt-4 font-semibold">Overview</p>
         <ul class=" block ml-5 border-l mt-5">
             @for (item of sideBarLinks; track item.id) {
-                <li class="mt-2 text-gray-600"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
+                <li class="mt-2 text-gray-600 dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
             }
         </ul>
         <p  class="text-lg mt-4 font-semibold">Components</p>
         <ul class=" block  ml-5 border-l mt-5">
             @for (item of componentsLinks; track item.id) {
-                <li class="mt-2 text-gray-600"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
+                <li class="mt-2 text-gray-600 dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
             }
         </ul>
    </div>
