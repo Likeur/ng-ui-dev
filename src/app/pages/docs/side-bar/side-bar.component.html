@@ -1,4 +1,4 @@
-<nav class="bg-white dark:bg-black duration-300 dark:text-white border-r lg:sticky z-40 lg:w-60 p-2 h-[90vh] overflow-y-scroll">
+<nav id="sidebox" class="w-0 bg-white dark:bg-black duration-300 dark:text-white border-r lg:sticky z-40 lg:w-60 p-2 h-[90vh] overflow-y-scroll">
     <ul class="p-4">
         @for (item of sideUpLinks; track item.id) {
             <li>
@@ -14,14 +14,19 @@
         <p  class="text-lg mt-4 font-semibold">Overview</p>
         <ul class=" block ml-5 border-l mt-5">
             @for (item of sideBarLinks; track item.id) {
-                <li class="mt-2 text-gray-600 dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
+                <li (click)="NavToggle()" class="mt-2 text-gray-600 dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
             }
         </ul>
         <p  class="text-lg mt-4 font-semibold">Components</p>
         <ul class=" block  ml-5 border-l mt-5">
             @for (item of componentsLinks; track item.id) {
-                <li class="mt-2 text-gray-600 dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
+                <li (click)="NavToggle()" class="mt-2 text-gray-600 dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
             }
         </ul>
    </div>
+
+   <button id="navbtn" (click)="NavToggle()" class="ml-2 absolute lg:hidden right-6 top-20 duration-300">
+        <span class="bar-un h-0.5 w-6 duration-300 block bg-gray-700 dark:bg-white rounded-full"></span>
+        <span class="bar-deux h-0.5 w-6 relative duration-300 block mt-2 bg-gray-700 dark:bg-white rounded-full"></span>
+    </button>
 </nav>

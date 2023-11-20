@@ -72,4 +72,20 @@ export class SideBarComponent {
     },
     
   ]
+
+  NavToggle(){
+    const sideBox = document.querySelector('#sidebox')!
+    const barUn = document.querySelector('.bar-un')!
+    const barDeux = document.querySelector('.bar-deux')!
+    const navbtn = document.querySelector('#navbtn')!
+
+    sideBox.classList.toggle('w-0')
+    barUn.classList.toggle('rotate-45')
+    barUn.classList.toggle('mt-2')
+    barUn.classList.toggle('absolute')
+
+    barDeux.classList.toggle('-rotate-45')
+    navbtn.classList.toggle('rotate-180')
+    navbtn.classList.toggle('mt-2')
+  }
 }
