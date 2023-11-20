@@ -29,6 +29,13 @@ export default class BlocksComponent {
       },
       {
         id : 3,
+        name : "blog-section",
+        image : '../../../assets/images/blogsec.png',
+        route : '../docs/blogsec',
+        quantity: 2
+      },
+      {
+        id : 4,
         name : "footer-section",
         image : '../../../assets/images/footersec.png',
         route : '../docs/footer',

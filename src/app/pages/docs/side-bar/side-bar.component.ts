@@ -62,6 +62,11 @@ export class SideBarComponent {
     },
     {
       id:5,
+      title: 'Blog-section',
+      route: '/docs/blogsec'
+    },
+    {
+      id:6,
       title: 'Footer',
       route: '/docs/footer'
     },

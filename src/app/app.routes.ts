@@ -42,6 +42,11 @@ export const routes: Routes = [
                 loadComponent: () => import ('./pages/docs/featuresec/featuresec.component'),
             },
             {
+                path: 'blogsec',
+                title: 'blog-section',
+                loadComponent: () => import ('./pages/docs/blogsec/blogsec.component'),
+            },
+            {
                 path: 'cta',
                 title: 'cta',
                 loadComponent: () => import ('./pages/docs/cta/cta.component'),
