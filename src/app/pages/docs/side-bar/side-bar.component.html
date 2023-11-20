@@ -1,4 +1,4 @@
-<nav id="sidebox" class="w-0 bg-white dark:bg-black duration-300 dark:text-white border-r lg:sticky z-40 lg:w-60 p-2 h-[90vh] overflow-y-scroll">
+<nav id="sidebox" class="w-0 bg-white dark:bg-black duration-300 dark:text-white border-r lg:sticky z-40 lg:w-60 lg:p-2 h-[90vh] overflow-y-scroll">
     <ul class="p-4">
         @for (item of sideUpLinks; track item.id) {
             <li>
@@ -25,7 +25,7 @@
         </ul>
    </div>
 
-   <button id="navbtn" (click)="NavToggle()" class="ml-2 absolute lg:hidden right-6 top-20 duration-300">
+   <button id="navbtn" (click)="NavToggle()" class="bg-white dark:bg-black p-2 rounded-full absolute lg:hidden right-6 top-20 duration-300">
         <span class="bar-un h-0.5 w-6 duration-300 block bg-gray-700 dark:bg-white rounded-full"></span>
         <span class="bar-deux h-0.5 w-6 relative duration-300 block mt-2 bg-gray-700 dark:bg-white rounded-full"></span>
     </button>
