@@ -14,10 +14,10 @@
         </div>
         <div class="flex items-center border-l dark:border-white/20 p-2">
             <a href="https://github.com/Likeur/ng-ui-dev" class="text-xl text-gray-700 relative top-0.5 dark:text-white/80"><i class="bx bxl-github"></i></a>
-            <button (click)="isDarkmode()" id="darkmode" class="text-lg text-gray-700 h-6 w-6 ml-1 rounded-full p-2 flex justify-center items-center duration-300 dark:text-white/80"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
-            <button (click)="NavToggle()" class="ml-2 lg:hidden duration-300">
-                <span class="bar-un h-0.5 w-6 duration-300 block bg-gray-700 rounded-full"></span>
-                <span class="bar-deux h-0.5 w-6 relative duration-300 block mt-2 bg-gray-700 rounded-full"></span>
+            <button (click)="isDarkmode()" id="darkmode" class="text-xl text-gray-700 h-6 w-6 ml-2 rounded-full p-2 flex justify-center items-center duration-300 dark:text-white/80"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
+            <button id="navbtn" (click)="NavToggle()" class="ml-2 lg:hidden duration-300">
+                <span class="bar-un h-0.5 w-6 duration-300 block bg-gray-700 dark:bg-white rounded-full"></span>
+                <span class="bar-deux h-0.5 w-6 relative duration-300 block mt-2 bg-gray-700 dark:bg-white rounded-full"></span>
             </button>
         </div>
     </nav>

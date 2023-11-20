@@ -55,6 +55,7 @@ export class NavbarComponent {
     const  navBox = document.querySelector('#navbox')!
     const barUn = document.querySelector('.bar-un')!
     const barDeux = document.querySelector('.bar-deux')!
+    const navbtn = document.querySelector('#navbtn')!
 
     navBox.classList.toggle('scale-0')
     barUn.classList.toggle('rotate-45')
@@ -62,5 +63,7 @@ export class NavbarComponent {
     barUn.classList.toggle('absolute')
 
     barDeux.classList.toggle('-rotate-45')
+    navbtn.classList.toggle('rotate-180')
+    navbtn.classList.toggle('mt-2')
   }
 }
