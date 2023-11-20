@@ -57,6 +57,11 @@ export class SideBarComponent {
     },
     {
       id:4,
+      title: 'Features-section',
+      route: '/docs/featuresec'
+    },
+    {
+      id:5,
       title: 'Footer',
       route: '/docs/footer'
     },

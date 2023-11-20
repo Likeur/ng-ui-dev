@@ -17,21 +17,21 @@ export default class BlocksComponent {
         id : 1,
         name : "Hero-section",
         image : '../../../assets/images/hero.png',
-        route : '',
+        route : '../docs/herosection',
         quantity: 3
       },
       {
         id : 2,
         name : "feature-section",
         image : '../../../assets/images/futuresec.png',
-        route : '',
+        route : '../docs/featuresec',
         quantity: 2
       },
       {
         id : 3,
         name : "footer-section",
         image : '../../../assets/images/footersec.png',
-        route : '',
+        route : '../docs/footer',
         quantity: 5
       }
     ]
