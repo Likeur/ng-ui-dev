@@ -79,7 +79,7 @@ export class SideBarComponent {
     const barDeux = document.querySelector('.bar-deux')!
     const navbtn = document.querySelector('#navbtn')!
 
-    sideBox.classList.toggle('w-0')
+    sideBox.classList.toggle('w-64')
     barUn.classList.toggle('rotate-45')
     barUn.classList.toggle('mt-2')
     barUn.classList.toggle('absolute')
