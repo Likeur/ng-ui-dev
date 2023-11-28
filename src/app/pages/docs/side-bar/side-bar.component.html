@@ -1,4 +1,4 @@
-<nav id="sidebox" class="w-0 bg-white dark:bg-black duration-300 dark:text-white border-r lg:sticky z-40 lg:w-60 lg:p-2 h-[90vh] overflow-y-scroll">
+<nav id="sidebox" class="w-0 bg-white dark:dark:bg-gray-950 duration-300 dark:text-white border-r lg:sticky z-40 lg:w-60 lg:p-2 h-[90vh] overflow-y-scroll">
     <ul class="p-4">
         @for (item of sideUpLinks; track item.id) {
             <li>
@@ -12,13 +12,13 @@
 
    <div class="p-4">
         <p  class="text-lg mt-4 font-semibold">Overview</p>
-        <ul class=" block ml-5 border-l mt-5">
+        <ul class=" block ml-5 border-l dark:border-white/30 mt-5">
             @for (item of sideBarLinks; track item.id) {
                 <li (click)="NavToggle()" class="mt-2 text-gray-600 dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
             }
         </ul>
         <p  class="text-lg mt-4 font-semibold">All Blocks</p>
-        <ul class=" block  ml-5 border-l mt-5">
+        <ul class=" block  ml-5 border-l dark:border-white/30 mt-5">
             @for (item of componentsLinks; track item.id) {
                 <li (click)="NavToggle()" class="mt-2 text-gray-600 dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-transparent bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text border-l-2 border-pink-600" class="p-2"> {{item.title}} </a></li>
             }

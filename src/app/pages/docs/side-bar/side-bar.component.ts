@@ -42,8 +42,8 @@ export class SideBarComponent {
     
     {
       id:1,
-      title: 'button',
-      route: '/docs/button'
+      title: 'Hero-section',
+      route: '/docs/herosection'
     },
     {
       id:2,
@@ -52,7 +52,7 @@ export class SideBarComponent {
     },
     {
       id:3,
-      title: 'Hero-section',
+      title: 'Navbar',
       route: '/docs/herosection'
     },
     {
@@ -67,7 +67,7 @@ export class SideBarComponent {
     },
     {
       id:6,
-      title: 'Footer',
+      title: 'Footer-section',
       route: '/docs/footer'
     },
     
