@@ -1,12 +1,12 @@
-<main class="overflow-hidden h-screen w-screen">
-    <div class="p-4 lg:sticky lg:top-0 bg-white dark:bg-gray-950 duration-300 border-b dark:border-white/30 flex justify-between">
+<main class="">
+    <div class="p-4 lg:p-6 bg-white dark:bg-gray-950 duration-300 dark:border-white/30 flex justify-between">
         <a routerLink="">
             <img src="../../../../assets/images/ng ui new logo.png" width="60" alt="">
         </a>
         <button (click)="isDarkmode()" id="darkmode" class="text-xl bg-gray-100 dark:bg-gray-900 dark:text-yellow-400 dark:border-white/30 border h-8 w-8 rounded-full p-2 flex justify-center items-center duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
     </div>
-    <main class="flex">
-        <app-side-bar />
+    <main class="flex lg:sticky lg:top-0">
+        <app-side-bar class="lg:sticky lg:top-0" />
         <section class="">
             <router-outlet></router-outlet>
         </section>

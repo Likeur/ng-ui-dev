@@ -1,9 +1,9 @@
-<nav id="sidebox" class="w-0 bg-white dark:dark:bg-gray-950 duration-300 dark:text-white border-r lg:sticky z-40 lg:w-60 lg:p-2 h-[90vh] overflow-y-scroll">
+<nav id="sidebox" class="w-0 bg-white dark:dark:bg-gray-950 duration-300 dark:text-white border-r lg:sticky lg:top-0 z-40 lg:w-60 lg:p-2 h-[90vh] overflow-y-scroll">
     <ul class="p-4">
         @for (item of sideUpLinks; track item.id) {
             <li class="text-sm">
                 <a routerLink="{{item.link}}" class="flex font-semibold items-center mt-2">
-                    <span class="border p-1 bg-gray-100 flex justify-center items-center dark:bg-gray-900"><i class='{{item.icon}}'></i></span>
+                    <span class="border p-1 bg-gray-100 flex justify-center items-center dark:bg-gray-900 rounded-full"><i class='{{item.icon}}'></i></span>
                     <span class="ml-1">{{item.title}}</span>
                 </a>
             </li>
@@ -11,13 +11,13 @@
     </ul>
 
    <div class="p-4">
-        <p  class="text-lg mt-4 font-semibold">Overview</p>
+        <p  class=" mt-1 font-semibold">Overview</p>
         <ul class=" block ml-5 border-l dark:border-white/30 mt-5">
             @for (item of sideBarLinks; track item.id) {
                 <li (click)="NavToggle()" class="mt-2 text-gray-600 text-sm dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-blue-600 border-l-[1px] border-blue-600" class="p-1 px-3 -ml-[0.10rem] hover:text-blue-600 hover:border-l-[1px] hover:border-blue-600 duration-300"> {{item.title}} </a></li>
             }
         </ul>
-        <p  class="text-lg mt-4 font-semibold">All Blocks</p>
+        <p  class="mt-4 font-semibold">All Blocks</p>
         <ul class=" block  ml-5 border-l dark:border-white/30 mt-5">
             @for (item of componentsLinks; track item.id) {
                 <li (click)="NavToggle()" class="mt-2 text-gray-600 text-sm dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-blue-600 border-l-[1px] border-blue-600" class="p-1 px-3 -ml-[0.10rem] hover:text-blue-600 hover:border-l-[1px] hover:border-blue-600 duration-300"> {{item.title}} </a></li>
