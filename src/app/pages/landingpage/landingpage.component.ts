@@ -39,6 +39,20 @@ export default class LandingpageComponent {
       image : '../../../assets/images/footersec.png',
       route : '../docs/footer',
       quantity: 5
+    },
+    {
+      id : 5,
+      name : "Cta",
+      image : '../../../assets/images/footersec.png',
+      route : '../docs/footer',
+      quantity: 5
+    },
+    {
+      id : 6,
+      name : "Navbar",
+      image : '../../../assets/images/footersec.png',
+      route : '../docs/footer',
+      quantity: 5
     }
   ]
 }
