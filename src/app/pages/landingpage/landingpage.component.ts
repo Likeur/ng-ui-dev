@@ -11,5 +11,34 @@ import { FooterComponent } from '../../components/footer/footer.component';
   templateUrl: './landingpage.component.html',
 })
 export default class LandingpageComponent {
-
+  blockElement = [
+    {
+      id : 1,
+      name : "Hero-section",
+      image : '../../../assets/images/hero.png',
+      route : '../docs/herosection',
+      quantity: 3
+    },
+    {
+      id : 2,
+      name : "feature-section",
+      image : '../../../assets/images/futuresec.png',
+      route : '../docs/featuresec',
+      quantity: 2
+    },
+    {
+      id : 3,
+      name : "blog-section",
+      image : '../../../assets/images/blogsec.png',
+      route : '../docs/blogsec',
+      quantity: 2
+    },
+    {
+      id : 4,
+      name : "footer-section",
+      image : '../../../assets/images/footersec.png',
+      route : '../docs/footer',
+      quantity: 5
+    }
+  ]
 }

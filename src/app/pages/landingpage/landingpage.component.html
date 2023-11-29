@@ -113,6 +113,26 @@
             </ul>
        </div>
     </section>
+    <section  class="mt-9">
+        <div>
+            <span  class="flex flex-col items-center justify-center">
+                <h2 class="text-2xl lg:text-4xl font-semibold">Modern UIs Block</h2>
+                <p class="mt-3 text-gray-600">All you need to have for better and modern UIs</p>
+            </span>
+            <section class="flex justify-center">
+                <div class="grid gap-4 lg:gap-6 lg:grid-cols-3">
+                    @for (item of blockElement; track item.id) {
+                        <a routerLink="{{item.route}}" class="block w-64">
+                            <div class="block h-44 bg-gray-300 rounded-2xl"></div>
+                            <span>
+                                <p> {{item.name}} </p>
+                            </span>
+                        </a>
+                    }
+                </div>
+            </section>
+        </div>
+    </section>
     <section class="h-[20vh]"></section>
     <app-footer />
 </main>
