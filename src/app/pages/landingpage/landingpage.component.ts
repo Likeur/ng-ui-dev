@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { HomeCodeComponent } from '../../components/home-code/home-code.component';
 
 @Component({
   selector: 'app-landingpage',
   standalone: true,
-  imports: [CommonModule, NavbarComponent, RouterModule, FooterComponent],
+  imports: [CommonModule, NavbarComponent, RouterModule, FooterComponent, HomeCodeComponent],
   templateUrl: './landingpage.component.html',
 })
 export default class LandingpageComponent {

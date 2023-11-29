@@ -5,8 +5,10 @@
         </a>
         <button (click)="isDarkmode()" id="darkmode" class="text-xl bg-gray-100 dark:bg-gray-900 dark:text-yellow-400 dark:border-white/30 border h-8 w-8 rounded-full p-2 flex justify-center items-center duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
     </div>
-    <main class="flex lg:sticky lg:top-0">
-        <app-side-bar class="lg:sticky lg:top-0" />
+    <main class="flex relative lg:sticky lg:top-0">
+        <div class="sticky top-0">
+            <app-side-bar />
+        </div>
         <section class="">
             <router-outlet></router-outlet>
         </section>
