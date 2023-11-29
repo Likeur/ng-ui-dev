@@ -54,6 +54,27 @@ export default class LandingpageComponent {
       image : '../../../assets/images/footersec.png',
       route : '../docs/footer',
       quantity: 5
+    },
+    {
+      id : 7,
+      name : "logocloud",
+      image : '../../../assets/images/footersec.png',
+      route : '../docs/footer',
+      quantity: 5
+    },
+    {
+      id : 8,
+      name : "team",
+      image : '../../../assets/images/footersec.png',
+      route : '../docs/footer',
+      quantity: 5
+    },
+    {
+      id : 9,
+      name : "pricing",
+      image : '../../../assets/images/footersec.png',
+      route : '../docs/footer',
+      quantity: 5
     }
   ]
 }

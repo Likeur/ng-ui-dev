@@ -121,12 +121,12 @@
             </span>
             <section class="flex flex-col items-center justify-center mt-5 lg:mt-16">
                 <div class="relative grid gap-4 lg:gap-6 lg:grid-cols-3">
-                    <div class="absolute z-40 bottom-0 bg-gradient-to-t from-white dark:from-gray-950 h-20 w-full"></div>
+                    <div class="absolute z-40 bottom-0 bg-gradient-to-t from-white dark:from-gray-950 h-44 w-full"></div>
                     @for (item of blockElement; track item.id) {
-                        <a routerLink="{{item.route}}" class="group block w-72">
-                            <div class="block h-52 bg-gray-300 dark:bg-gray-900 dark:group-hover:bg-gray-800 group-hover:bg-gray-200 group-hover:ring-1 dark:group-hover:ring-gray-900 group-hover:ring-offset-4 duration-300 rounded-2xl"></div>
+                        <a routerLink="{{item.route}}" class="group block w-80">
+                            <div class="block h-60 bg-gray-300 dark:bg-gray-900 dark:group-hover:bg-gray-800 group-hover:bg-gray-200 group-hover:ring-1 dark:group-hover:ring-gray-900 group-hover:ring-offset-4 duration-300 rounded-2xl"></div>
                             <span>
-                                <p class="dark:text-white mt-3"> {{item.name}} </p>
+                                <p class="dark:text-white mt-3 group-hover:text-blue-600 duration-300"> {{item.name}} </p>
                             </span>
                         </a>
                     }
