@@ -33,7 +33,7 @@ export class SideBarComponent {
     },
     {
       id:2,
-      title: 'Getting started',
+      title: 'Installation',
       route: '/docs/getstarted'
     }
   ]
