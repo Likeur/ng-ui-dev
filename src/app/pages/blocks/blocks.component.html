@@ -1,32 +1,10 @@
 <main>
     <app-navbar />
-    <section>
-        <div class="lg:p-4 container mx-auto">
-            <div class="p-1">
-                <div class=" p-4 dark:text-white duration-300">
-                    <h1 class="mt-5 font-bold text-2xl lg:text-5xl">Discover All NgUI Blocks</h1>
-                    <p class="mt-5">All you need to have for better and modern UIs</p>
-                    <div class="mt-5">
-                        <span class="text-gray-800 dark:text-white border rounded-full p-1 px-2">All Block</span>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-5 flex justify-center">
-                <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                    @for (item of blockElements; track $index) {
-                        <a routerLink="{{item.route}}" class="block p-1 w-96 lg:w-80">
-                            <div class="h-60 lg:h-52 rounded-2xl border overflow-hidden w-full">
-                                <img [src]="item.image" alt="">
-                            </div>
-                            <div class="flex justify-between dark:text-white mt-2 p-2">
-                                <span> {{item.name}} </span>
-                                <span> {{item.quantity}} </span>
-                            </div>
-                        </a>
-                    }
-                </div>
-            </div>
-        </div>
+    <div>
         
+        <app-blocknav />
+    </div>
+    <section>
+         <router-outlet></router-outlet>
     </section>
 </main>

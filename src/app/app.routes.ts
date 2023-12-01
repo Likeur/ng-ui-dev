@@ -9,59 +9,55 @@ export const routes: Routes = [
     {
         path: 'blocks',
         title: 'block-ng-ui',
-        loadComponent: () => import ('./pages/blocks/blocks.component')
-    },
-    {
-        path: 'docs',
-        title: 'docs-ng-ui',
-        loadComponent: () => import ('./pages/docs/docs.component'),
+        loadComponent: () => import ('./pages/blocks/blocks.component'),
         children:[
-            {
-                path: 'introduction',
-                title: 'introduction',
-                loadComponent: () => import ('./pages/docs/introduction/introduction.component'),
-            },
             {
                 path: 'getstarted',
                 title: 'getting started',
-                loadComponent: () => import ('./pages/docs/get-started/get-started.component'),
+                loadComponent: () => import ('./pages/blocks/get-started/get-started.component'),
             },
             {
                 path: 'footer',
                 title: 'footer',
-                loadComponent: () => import ('./pages/docs/footer/footer.component'),
+                loadComponent: () => import ('./pages/blocks/footer/footer.component'),
             },
             {
                 path: 'herosection',
                 title: 'hero-section',
-                loadComponent: () => import ('./pages/docs/hero-section/hero-section.component'),
+                loadComponent: () => import ('./pages/blocks/hero-section/hero-section.component'),
             },
             {
                 path: 'featuresec',
                 title: 'feature-section',
-                loadComponent: () => import ('./pages/docs/featuresec/featuresec.component'),
+                loadComponent: () => import ('./pages/blocks/featuresec/featuresec.component'),
             },
             {
                 path: 'blogsec',
                 title: 'blog-section',
-                loadComponent: () => import ('./pages/docs/blogsec/blogsec.component'),
+                loadComponent: () => import ('./pages/blocks/blogsec/blogsec.component'),
             },
             {
                 path: 'cta',
                 title: 'cta',
-                loadComponent: () => import ('./pages/docs/cta/cta.component'),
+                loadComponent: () => import ('./pages/blocks/cta/cta.component'),
             },
             {
                 path: 'button',
                 title: 'button',
-                loadComponent: () => import ('./pages/docs/button/button.component'),
+                loadComponent: () => import ('./pages/blocks/button/button.component'),
             },
             {
                 path: '',
-                redirectTo: 'introduction',
+                redirectTo: 'herosection',
                 pathMatch: 'full'
             },
         ],
+    },
+    {
+        path: 'docs',
+        title: 'docs-ng-ui',
+        loadComponent: () => import ('./pages/docs/docs.component')
+       
     },
     {
         path: 'templates',

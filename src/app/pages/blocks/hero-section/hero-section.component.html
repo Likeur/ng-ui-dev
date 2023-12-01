@@ -1,0 +1,35 @@
+<main class="">
+    <section class="block p-4 w-full">
+        
+        <div class="flex p-4 justify-between items-center">
+            <p class="text-2xl font-semibold">Hero sec 1</p>
+            <div class="flex items-center">
+                <button class="border rounded-full shadow-sm p-1 px-2 h-10 w-10 flex justify-center items-center text-xl"><i class='bx bx-code-alt' ></i></button>
+                <a routerLink="" class="border bg-gray-50 p-2 flex items-center rounded-full shadow-sm px-2 ml-3">
+                    <i class='bx bxs-pen'></i>
+                    <span class="text-sm ml-1">Customize</span>
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="border mt-3 block w-full lg:w-full rounded-3xl shadow-sm lg:h-[80vh]">
+                <div class="h-12 px-4 p-2 flex justify-between items-center">
+                    <div>
+                        <p>Preview</p>
+                    </div>
+                    <div class="flex items-center">
+                        <button (click)="desktopView()" class="text-lg"><i class='bx bx-desktop'></i></button>
+                        <button (click)="tabletView()" class="text-lg ml-4"><i class='bx bx-tab'></i></button>
+                        <button (click)="mobileView()" class="text-lg ml-4"><i class='bx bx-mobile'></i></button>
+                    </div>
+                    <div>
+                        <button (click)="isDarkmode()" id="darkmode" class="text-xl dark:bg-gray-900 dark:text-yellow-400 h-7 w-7 rounded-full p-2 flex justify-center items-center duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
+                    </div>
+                </div>
+                <div class="border-t">
+                    <app-herosec1 />
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

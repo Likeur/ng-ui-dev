@@ -17,12 +17,8 @@
                 <li (click)="NavToggle()" class="mt-2 text-gray-600 text-sm dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-blue-600 border-l-[1px] border-blue-600" class="p-1 px-3 -ml-[0.10rem] hover:text-blue-600 hover:border-l-[1px] hover:border-blue-600 duration-300"> {{item.title}} </a></li>
             }
         </ul>
-        <p  class="mt-4 font-semibold">All Blocks</p>
-        <ul class=" block  ml-5 border-l dark:border-white/30 mt-5">
-            @for (item of componentsLinks; track item.id) {
-                <li (click)="NavToggle()" class="mt-2 text-gray-600 text-sm dark:text-white"><a routerLink="{{item.route}}" routerLinkActive="text-blue-600 border-l-[1px] border-blue-600" class="p-1 px-3 -ml-[0.10rem] hover:text-blue-600 hover:border-l-[1px] hover:border-blue-600 duration-300"> {{item.title}} </a></li>
-            }
-        </ul>
+        <p  class="mt-4 font-semibold">All Components</p>
+        
    </div>
 </nav>
   
