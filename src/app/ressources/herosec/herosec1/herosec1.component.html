@@ -1,0 +1,34 @@
+<section>
+    <nav class="p-4 flex justify-between items-center">
+       <div class="flex items-center">
+        <div class="flex items-center">
+            <span></span>
+            <span></span>
+        </div>
+        <a class="ml-2 font-semibold text-xl">ArhCo</a>
+       </div> 
+       <ul class="flex items-center">
+        @for (item of navLinks; track item.id) {
+            <li class="ml-3"><a routerLink="{{item.route}}"> {{item.title}} </a></li>
+        }
+       </ul>
+    </nav>
+    <section class=" p-4 lg:p-6 grid mt-5 gap-4 lg:grid-cols-2">
+        <div>
+            <div>
+                <div class="flex flex-col lg:text-5xl font-semibold">
+                    <span>Designing</span>
+                    <span class="mt-1">Tomorrow, Today</span>
+                </div>
+                <p class="text-gray-500 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta est labore .</p>
+            </div>
+            <div class="flex items-center mt-5">
+                <button class="p-2 px-3 border bg-black text-white rounded-full">Connect</button>
+                <button class="p-2 px-3 border rounded-full">Explore</button>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </section>
+</section>

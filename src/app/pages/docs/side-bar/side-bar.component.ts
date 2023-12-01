@@ -53,7 +53,7 @@ export class SideBarComponent {
     {
       id:3,
       title: 'Navbar',
-      route: '/docs/herosection'
+      route: '/docs/navbar'
     },
     {
       id:4,

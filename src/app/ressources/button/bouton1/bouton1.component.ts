@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './bouton1.component.html',
-  styles: ``
 })
 export class Bouton1Component {
 
+  btn_name = 'My btn'
 }
