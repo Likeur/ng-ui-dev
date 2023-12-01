@@ -9,11 +9,11 @@
        </div> 
        <ul class="flex items-center">
         @for (item of navLinks; track item.id) {
-            <li class="ml-3 text-gray-600"><a routerLink="{{item.route}}" routerLinkActive="text-black"> {{item.title}} </a></li>
+            <li class="ml-3 "><a routerLink="{{item.route}}" routerLinkActive="text-black" class="text-gray-600 block hover:text-blue-950"> {{item.title}} </a></li>
         }
        </ul>
        <div>
-        <button class="bg-black text-white p-2 rounded-lg">Get in touch</button>
+        <button class="bg-black text-white p-2 rounded-lg duration-300 border border-opacity-10 hover:bg-white hover:text-black">Get in touch</button>
        </div>
     </nav>
     <section class=" p-4 lg:p-6 grid mt-5 gap-4 lg:grid-cols-2">
