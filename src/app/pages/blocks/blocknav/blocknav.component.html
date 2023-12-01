@@ -1,11 +1,19 @@
 <main >
-    <section>
-        
+    <section class="p-4 flex justify-between  items-center">
+        <div>
+            <p>All Blocks</p>
+        </div>
+        <ul id="blockmenu" class="flex scale-0 flex-col bg-white top-24 lg:right-32 p-4 w-52 shadow-md duration-300 rounded-3xl border absolute">
+            @for (item of blockLinks; track item.id) {
+                <li class="hover:cursor-pointer rounded-md hover:bg-gray-100"><a (click)="toggleBlockMenu()" routerLink="{{item.route}}" class="w-full p-2 block"> {{item.title}} </a></li>
+            }
+        </ul>
+        <button (click)="toggleBlockMenu()" class="border rounded-full text-sm p-2 px-4 bg-black/5 shadow-sm">Block</button>
     </section>
     <section class=" p-4 lg:p-8">
         <div class="flex text-gray-500 text-sm">
             <a href="">Blocks</a>
-            <span class="ml-2"> > </span>
+            <span class="ml-2"> / </span>
             <a href="" class="ml-2">Hero section</a>
         </div>
     </section>

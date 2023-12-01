@@ -12,18 +12,19 @@
             </div>
         </div>
         <div class="flex justify-center">
-            <div class="border mt-3 block w-full lg:w-full rounded-3xl shadow-sm lg:h-[80vh]">
+            <div class="border mt-3 block w-full lg:w-full rounded-3xl shadow-sm lg:h-[100vh]">
                 <div class="h-12 px-4 p-2 flex justify-between items-center">
-                    <div>
-                        <p>Preview</p>
+                    <div class="">
+                        <p class="text-sm">Preview</p>
                     </div>
                     <div class="flex items-center">
-                        <button (click)="desktopView()" class="text-lg"><i class='bx bx-desktop'></i></button>
-                        <button (click)="tabletView()" class="text-lg ml-4"><i class='bx bx-tab'></i></button>
-                        <button (click)="mobileView()" class="text-lg ml-4"><i class='bx bx-mobile'></i></button>
+                        <button (click)="desktopView()" class="text-xl"><i class='bx bx-desktop'></i></button>
+                        <button (click)="tabletView()" class="text-xl ml-4"><i class='bx bx-tab'></i></button>
+                        <button (click)="mobileView()" class="text-xl ml-4"><i class='bx bx-mobile'></i></button>
                     </div>
-                    <div>
-                        <button (click)="isDarkmode()" id="darkmode" class="text-xl dark:bg-gray-900 dark:text-yellow-400 h-7 w-7 rounded-full p-2 flex justify-center items-center duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
+                    <div class="flex items-center">
+                        <button class="text-xl"><i class='bx bx-expand '></i></button>
+                        <button (click)="isDarkmode()" id="darkmode" class="text-xl ml-2 dark:text-yellow-400 duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
                     </div>
                 </div>
                 <div class="border-t">

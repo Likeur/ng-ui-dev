@@ -12,39 +12,6 @@ import { BlocknavComponent } from './blocknav/blocknav.component';
   styles: ``
 })
 export default class BlocksComponent {
-  componentsLinks = [
-    
-    {
-      id:1,
-      title: 'Hero-section',
-      route: '/docs/herosection'
-    },
-    {
-      id:2,
-      title: 'cta',
-      route: '/docs/cta'
-    },
-    {
-      id:3,
-      title: 'Navbar',
-      route: '/docs/navbar'
-    },
-    {
-      id:4,
-      title: 'Features-section',
-      route: '/docs/featuresec'
-    },
-    {
-      id:5,
-      title: 'Blog-section',
-      route: '/docs/blogsec'
-    },
-    {
-      id:6,
-      title: 'Footer-section',
-      route: '/docs/footer'
-    },
-    
-  ]
+  
     
 }
