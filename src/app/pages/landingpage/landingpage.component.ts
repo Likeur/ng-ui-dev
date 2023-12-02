@@ -17,63 +17,63 @@ export default class LandingpageComponent {
       id : 1,
       name : "Hero-section",
       image : '../../../assets/images/hero.png',
-      route : '../docs/herosection',
+      route : '../blocks/herosection',
       quantity: 3
     },
     {
       id : 2,
       name : "feature-section",
       image : '../../../assets/images/futuresec.png',
-      route : '../docs/featuresec',
+      route : '../blocks/featuresec',
       quantity: 2
     },
     {
       id : 3,
       name : "blog-section",
       image : '../../../assets/images/blogsec.png',
-      route : '../docs/blogsec',
+      route : '../blocks/blogsec',
       quantity: 2
     },
     {
       id : 4,
       name : "footer-section",
       image : '../../../assets/images/footersec.png',
-      route : '../docs/footer',
+      route : '../blocks/footer',
       quantity: 5
     },
     {
       id : 5,
       name : "Cta",
       image : '../../../assets/images/footersec.png',
-      route : '../docs/footer',
+      route : '../blocks/footer',
       quantity: 5
     },
     {
       id : 6,
       name : "Navbar",
       image : '../../../assets/images/footersec.png',
-      route : '../docs/footer',
+      route : '../blocks/footer',
       quantity: 5
     },
     {
       id : 7,
       name : "logocloud",
       image : '../../../assets/images/footersec.png',
-      route : '../docs/footer',
+      route : '../blocks/footer',
       quantity: 5
     },
     {
       id : 8,
       name : "team",
       image : '../../../assets/images/footersec.png',
-      route : '../docs/footer',
+      route : '../blocks/footer',
       quantity: 5
     },
     {
       id : 9,
       name : "pricing",
       image : '../../../assets/images/footersec.png',
-      route : '../docs/footer',
+      route : '../blocks/footer',
       quantity: 5
     }
   ]
