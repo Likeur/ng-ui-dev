@@ -8,7 +8,7 @@
             </div>
             <ul id="navbox" class="flex scale-0 lg:scale-100 flex-col p-6 border lg:border-none lg:p-0 h-[100vh] left-0 lg:h-min w-full lg:w-min bg-white/80 backdrop-blur-xl lg:bg-transparent absolute z-40 top-0 lg:relative lg:flex-row duration-300 items-left lg:ml-10">
                 @for (item of navLinks; track item.id) {
-                    <li (click)="NavToggle()" class="ml-3 mt-2 lg:mt-0 text-gray-900 dark:text-gray-300 font-light"><a routerLink="{{item.route}}" routerLinkActive="text-pink-600"> {{item.title}} </a></li>
+                    <li (click)="NavToggle()" class="ml-3 mt-2 lg:mt-0 text-gray-700 dark:text-gray-300 font-light hover:text-pink-600 duration-300"><a routerLink="{{item.route}}" routerLinkActive="text-pink-600"> {{item.title}} </a></li>
                 }
             </ul>
         </div>
