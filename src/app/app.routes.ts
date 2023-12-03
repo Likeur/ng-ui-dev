@@ -65,6 +65,11 @@ export const routes: Routes = [
         loadComponent: () => import ('./pages/templates/templates.component')
     },
     {
+        path: 'ressources',
+        title: 'dev-ressource',
+        loadComponent: () => import ('./ressources/allressources/allressources.component')
+    },
+    {
         path: '',
         redirectTo: 'home',
         pathMatch:'full'

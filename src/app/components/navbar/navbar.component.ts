@@ -20,7 +20,7 @@ export class NavbarComponent {
       id: 2,
       title: 'blocks',
       route: '/blocks'
-    },
+   },
     {
       id: 3,
       title: 'Docs',
@@ -30,6 +30,11 @@ export class NavbarComponent {
       id: 4,
       title: 'Templates',
       route: '/templates'
+    },
+    {
+      id: 5,
+      title: 'Ressources',
+      route: '/ressources'
     },
   ]
 
