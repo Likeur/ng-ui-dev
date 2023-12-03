@@ -37,4 +37,17 @@ export class Herosec1Component {
       route: '/'
     }
   ]
+
+  NavToggle(){
+    const  navBox = document.querySelector('#navbar')!
+    const barUn = document.querySelector('.bar')!
+    const barDeux = document.querySelector('.bar2')!
+
+    navBox.classList.toggle('scale-x-0')
+    barUn.classList.toggle('rotate-45')
+    barUn.classList.toggle('mt-2')
+    barUn.classList.toggle('absolute')
+
+    barDeux.classList.toggle('-rotate-45')
+  }
 }   
