@@ -1,6 +1,6 @@
 <main >
     <section class="container relative  mx-auto  flex justify-between  items-center lg:w-[85vw]">
-       <div class="sticky top-0 z-50 py-3 w-full border-b dark:border-white/5">
+       <div class="sticky top-0 z-20 py-3 w-full border-b dark:border-white/5">
             <ul id="blockmenu" class="flex w-full duration-300  ">
                 @for (item of blockLinks; track item.id) {
                     <li class="hover:cursor-pointer text-gray-600 rounded-md dark:text-white/80 font-light hover:bg-gray-50 dark:hover:bg-gray-900/80"><a routerLink="{{item.route}}" routerLinkActive="bg-gray-50 dark:bg-gray-900/80 rounded-md" class="w-full p-2 block"> {{item.title}} </a></li>
