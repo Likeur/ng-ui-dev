@@ -1,18 +1,24 @@
 <main class="">
     <section class="block p-4 w-full">
-        
-        <div class="container mx-auto flex justify-between items-center">
-            <p class="text-2xl font-semibold">Hero sec 1</p>
+        <section class="container lg:mt-16 lg:w-[85vw] mx-auto">
+            <div class="flex text-gray-500 text-sm">
+                <a href="">Blocks</a>
+                <span class="ml-2"> / </span>
+                <a href="" class="ml-2">Hero section</a>
+            </div>
+        </section>
+        <div class="container mx-auto  lg:mt-16 flex justify-between items-center lg:w-[85vw]">
+            <p class="text-2xl font-semibold dark:text-white">Hero sec 1</p>
             <div class="flex items-center">
-                <button class="border rounded-full p-1 px-2 h-10 w-10 flex justify-center items-center text-xl hover:-rotate-12 hover:bg-blue-100 hover:text-blue-500 duration-300"><i class='bx bx-code-alt' ></i></button>
-                <a routerLink="" class="bg-blue-100 text-blue-500 p-2 flex items-center rounded-full px-2 ml-3">
+                <button class="border dark:text-white dark:border-white/5 rounded-full p-1 px-2 h-10 w-10 flex justify-center items-center text-xl hover:-rotate-12 hover:bg-blue-100 dark:hover:bg-gray-900 hover:text-blue-500 duration-300"><i class='bx bx-code-alt' ></i></button>
+                <a routerLink="" class="bg-blue-100 dark:bg-gray-900 dark:text-white text-blue-500 p-2 flex items-center rounded-full px-2 ml-3">
                     <i class='bx bxs-pen'></i>
                     <span class="text-sm ml-1">Customize</span>
                 </a>
             </div>
         </div>
         <div class="flex mt-10 justify-center">
-            <div class="border mt-3 block w-full lg:w-full rounded-3xl shadow-sm lg:h-[100vh] overflow-hidden">
+            <div class="border dark:border-white/5 dark:text-white mt-3 block w-full lg:w-full rounded-3xl shadow-sm lg:h-[100vh] overflow-hidden">
                 <div class="lg:h-[10vh] px-4 p-2 flex justify-between items-center">
                     <div class="flex items-center">
                         <div class="flex items-center h-[5vh]">
@@ -32,7 +38,7 @@
                         <button (click)="isDarkmode()" id="darkmode" class="text-xl ml-2 dark:text-yellow-400 duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
                     </div>
                 </div>
-                <div class="border-t overflow-y-scroll h-[90vh]">
+                <div class="border-t dark:border-white/5 overflow-y-scroll h-[90vh]">
                     <app-herosec1 />
                 </div>
             </div>
