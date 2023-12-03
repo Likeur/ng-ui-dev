@@ -17,11 +17,6 @@ export const routes: Routes = [
                 loadComponent: () => import ('./pages/blocks/get-started/get-started.component'),
             },
             {
-                path: 'footer',
-                title: 'footer',
-                loadComponent: () => import ('./pages/blocks/footer/footer.component'),
-            },
-            {
                 path: 'herosection',
                 title: 'hero-section',
                 loadComponent: () => import ('./pages/blocks/hero-section/hero-section.component'),

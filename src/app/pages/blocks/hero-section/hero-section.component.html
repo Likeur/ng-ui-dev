@@ -38,10 +38,13 @@
                         <button (click)="isDarkmode()" id="darkmode" class="text-xl ml-2 dark:text-yellow-400 duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
                     </div>
                 </div>
-                <div class="border-t dark:border-white/5 overflow-y-scroll h-[90vh]">
-                    <app-herosec1 />
+                <div class="border-t dark:border-white/5 flex justify-center overflow-y-scroll h-[90vh]">
+                    <div id="Preview-container" class="{{screenSize}} border-l border-r duration-300">
+                        <app-herosec1 />
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <app-footer />
 </main>
