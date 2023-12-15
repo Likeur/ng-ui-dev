@@ -6,9 +6,7 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styles: [],
+  template: '<router-outlet></router-outlet>',
 })
 export class AppComponent {
-  title = 'ng-ui';
 }
