@@ -3,14 +3,21 @@ import { CommonModule } from '@angular/common';
 import { Herosec1Component } from '../../../ressources/herosec/herosec1/herosec1.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from '../../../components/footer/footer.component';
+import { CodeHerosec1Component } from '../../../codes/hero-sec/code-herosec1/code-herosec1.component';
 
 @Component({
   selector: 'app-hero-section',
   standalone: true,
-  imports: [CommonModule, Herosec1Component, RouterModule, FooterComponent ],
+  imports: [CommonModule, Herosec1Component, RouterModule,CodeHerosec1Component, FooterComponent ],
   templateUrl: './hero-section.component.html',
 })
 export default class HeroSectionComponent {
+
+  iscodeVisible = false
+
+  toggleCode(){
+    this.iscodeVisible = !this.iscodeVisible
+  }
 
   isDarkmode(){
     function darkmode(){

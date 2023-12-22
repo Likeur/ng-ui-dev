@@ -10,7 +10,14 @@
         <div class="container mx-auto mt-5 lg:mt-16 flex justify-between items-center lg:w-[85vw]">
             <p class="text-2xl font-semibold dark:text-white">Hero sec 1</p>
             <div class="flex items-center">
-                <button class="border dark:text-white dark:border-white/5 rounded-full p-1 px-2 h-10 w-10 flex justify-center items-center text-xl hover:-rotate-12 hover:bg-blue-100 dark:hover:bg-gray-900 hover:text-blue-500 duration-300"><i class='bx bx-code-alt' ></i></button>
+                <button (click)="toggleCode()" class="border dark:text-white dark:border-white/5 rounded-full p-1 px-2 h-10 w-10 flex justify-center items-center hover:bg-blue-100/40 dark:hover:bg-gray-900 hover:text-blue-500 duration-300">
+                    @if (iscodeVisible) {
+                        <i class='bx bx-show text-xl'></i> 
+                    }@else {
+                        <i class='bx bx-code-alt text-xl' ></i>
+                    }
+                   
+                </button>
                 <a routerLink="" class="bg-blue-100 dark:bg-gray-900 dark:text-white text-blue-500 p-2 flex items-center rounded-full px-2 ml-3">
                     <i class='bx bxs-pen'></i>
                     <span class="text-sm ml-1">Customize</span>
@@ -26,21 +33,39 @@
                             <span class="bg-gray-400 ml-1 rounded-full h-2 w-2 block"></span>
                             <span class="bg-gray-400 ml-1 rounded-full h-2 w-2 block"></span>
                         </div>
-                        <p class="text-sm ml-2 text-blue-900 border dark:border-white/5 border-opacity-10 p-1 px-2 dark:text-white/80 rounded-full">Preview</p>
+                        <p class="text-sm ml-2 text-blue-900 border dark:border-white/5 border-opacity-10 p-1 px-2 dark:text-white/80 rounded-full">
+                            @if (iscodeVisible) {
+                                <span>hero-section.component.ts</span>
+                            }@else {
+                                <span>Preview</span>
+                            } 
+                        </p>
                     </div>
                     <div class="hidden lg:flex items-center">
+                    @if (iscodeVisible) {
+                        <div>
+
+                        </div>
+                    }@else {
                         <button (click)="desktopView()" class="text-xl text-blue-600"><i class='bx bx-desktop'></i></button>
                         <button (click)="tabletView()" class="text-xl ml-4"><i class='bx bx-tab'></i></button>
                         <button (click)="mobileView()" class="text-xl ml-4"><i class='bx bx-mobile'></i></button>
+                    }
                     </div>
                     <div class="flex items-center">
                         <button class="text-xl"><i class='bx bx-expand '></i></button>
                         <button (click)="isDarkmode()" id="darkmode" class="text-xl ml-2 dark:text-yellow-400 duration-300"><i class='bx bxs-moon' id="darkmodeicon"></i></button>
                     </div>
                 </div>
-                <div class="border-t dark:border-white/5 flex justify-center overflow-y-scroll h-[90vh]">
+                <div class="border-t dark:border-white/5 flex justify-center h-[90vh]">
                     <div id="Preview-container" class="{{screenSize}} border-l border-r duration-300">
-                        <app-herosec1 />
+                        @if (iscodeVisible) {
+                            <div class="h-full w-full ">
+                                <app-code-herosec1 />
+                            </div>
+                        } @else {
+                            <iframe class="h-full w-full " src="https://ng-ui-dev.vercel.app/ressources" frameborder="0"></iframe>
+                        }
                     </div>
                 </div>
             </div>
